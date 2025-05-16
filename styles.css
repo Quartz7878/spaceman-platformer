@@ -1,4 +1,3 @@
-/* Reset and Global Styles */
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     touch-action: none;
 }
 
-/* Game Container */
 #gameContainer {
     position: relative;
     max-width: 100%;
@@ -28,7 +26,6 @@ body {
     touch-action: none;
 }
 
-/* UI Elements */
 #uiContainer {
     position: absolute;
     top: 10px;
@@ -67,7 +64,6 @@ body {
     transition: width 0.2s;
 }
 
-/* Screens */
 #gameOverScreen, #startScreen, #pauseScreen {
     position: absolute;
     top: 0;
@@ -92,7 +88,6 @@ body {
     text-align: center;
 }
 
-/* Buttons */
 button {
     background-color: #0f8;
     color: #000;
@@ -109,7 +104,6 @@ button:hover {
     background-color: #0f6;
 }
 
-/* Mobile Controls */
 #mobileControls {
     position: absolute;
     bottom: 20px;
@@ -139,7 +133,6 @@ button:hover {
     gap: 20px;
 }
 
-/* Settings and Pause Buttons */
 #settingsBtn, #pauseBtn {
     position: absolute;
     top: 10px;
@@ -159,7 +152,6 @@ button:hover {
     display: none;
 }
 
-/* Settings Menu */
 #settingsMenu {
     position: absolute;
     top: 50%;
@@ -192,14 +184,12 @@ button:hover {
     margin-top: 10px;
 }
 
-/* High Scores */
 #highScores {
     margin-top: 20px;
     font-size: 16px;
     text-align: center;
 }
 
-/* Responsive Design */
 @media (max-width: 800px) {
     #mobileControls {
         display: flex;
