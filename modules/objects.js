@@ -1,4 +1,4 @@
-import { COLORS } from './constants.js';
+import { COLORS } from './modules/constants.js';
 
 export class ObjectPool {
     constructor(game) {
