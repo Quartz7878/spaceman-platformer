@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceman Platformer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="480"></canvas>
+        <div id="uiContainer">
+            <div id="healthBar"><div id="healthFill"></div></div>
+            <div id="jetpackBar"><div id="jetpackFill"></div></div>
+            <div id="score">SCORE: 0</div>
+        </div>
+        <button id="settingsBtn">⚙️</button>
+        <button id="pauseBtn">⏸️</button>
+        <div id="startScreen">
+            <h1>SPACEMAN PLATFORMER</h1>
+            <p>Collect items, avoid enemies, and explore space!</p>
+            <button id="startButton">START GAME</button>
+            <div id="highScores">
+                <h3>HIGH SCORES</h3>
+                <div id="highScoresList">No scores yet</div>
+            </div>
+            <p id="controlsInfo">
+                CONTROLS:<br>
+                Arrow keys or WASD to move<br>
+                SPACE to jump<br>
+                Z or CTRL to shoot<br>
+                ESC or P to pause
+            </p>
+        </div>
+        <div id="gameOverScreen">
+            <h1>GAME OVER</h1>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <button id="restartButton">PLAY AGAIN</button>
+        </div>
+        <div id="pauseScreen">
+            <h1>GAME PAUSED</h1>
+            <button id="resumeButton">RESUME</button>
+            <button id="quitButton">QUIT TO MENU</button>
+        </div>
+        <div id="mobileControls">
+            <div id="moveControls">
+                <div id="leftBtn" class="controlBtn">←</div>
+                <div id="jumpBtn" class="controlBtn">↑</div>
+                <div id="rightBtn" class="controlBtn">→</div>
+            </div>
+            <div id="actionControls">
+                <div id="shootBtn" class="controlBtn">🔫</div>
+                <div id="pauseMobileBtn" class="controlBtn">⏸️</div>
+            </div>
+        </div>
+        <div id="settingsMenu">
+            <h2>Settings</h2>
+            <div class="setting-row">
+                <label for="difficultySelect">Difficulty:</label>
+                <select id="difficultySelect">
+                    <option value="easy">Easy</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="setting-row">
+                <label for="soundToggle">Sound:</label>
+                <input type="checkbox" id="soundToggle" checked>
+            </div>
+            <div class="setting-row">
+                <label for="particlesToggle">Particles:</label>
+                <input type="checkbox" id="particlesToggle" checked>
+            </div>
+            <button id="closeSettings">Close</button>
+        </div>
+    </div>
+    <script src="game.js" defer></script>
+</body>
+</html>
