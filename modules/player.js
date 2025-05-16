@@ -1,4 +1,4 @@
-import { COLORS, GRAVITY, JUMP_FORCE, MOVE_SPEED } from './constants.js';
+import { COLORS, GRAVITY, JUMP_FORCE, MOVE_SPEED } from './modules/constants.js';
 
 export class Player {
     constructor(game) {
